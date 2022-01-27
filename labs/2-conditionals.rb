@@ -30,12 +30,12 @@ die_1 = rand(1..6)
 die_2 = rand(1..6)
 total = die_1 + die_2
 
-puts total
+#puts total
 
 if total == 7 || total == 11
-    puts "YOU WIN!"
+    puts "YOU WIN! Total is #{total}"
 elsif total == 2 || total == 3 || total == 12
-    puts "YOU LOSE!"
+    puts "YOU LOSE! Total is #{total}"
 else 
     puts "The total is #{total}"
 end

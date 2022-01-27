@@ -26,3 +26,16 @@ weather_data = {
     { temperature: 70, conditions: "Partly Cloudy" }
   ]
 }
+
+current_temp = weather_data[:current][:temperature]
+current_condition = weather_data[:current][:conditions].downcase
+
+tomorrow_temp = weather_data[:forecast][0][:temperature]
+tomorrow_condition = weather_data[:forecast][0][:conditions].downcase
+
+future_temp = weather_data[:forecast][1][:temperature]
+future_condition = weather_data[:forecast][1][:conditions].downcase
+
+puts "Currently it is #{current_temp} degrees and #{current_condition}"
+puts "Tomorrow it will be #{tomorrow_temp} degrees and #{tomorrow_condition}"
+puts "The next day it will be #{future_temp} degrees and #{future_condition}"
